@@ -1,0 +1,249 @@
+/**************** Basic Styling ****************/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+}
+
+section {
+	margin: 0 auto;
+	padding: 30px;
+}
+
+/**************** Header Specific ****************/
+
+header {
+	background-color: #273c66;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+header h1 {
+	color: white;
+	font-size: 1.7rem;
+	font-family: 'PT Serif', serif;
+}
+
+/**************** 'Text-wrap' Specific ****************/
+
+.text-wrap {
+	text-align: center;
+}
+
+.text-wrap h2 {
+	font-size: 1.7rem;
+	font-family: 'PT Serif', serif;
+}
+
+.text-wrap p {
+	font-size: 1.2rem;
+	color: #bcbcbc;
+	font-family: 'Noto Serif', serif;
+}
+
+.text-wrap:after {
+	content: "";
+	display: block;
+	height: 12px;
+	width: 100%;
+	border-style: solid none;
+	border-top-width: thick;
+	margin: 40px auto 40px;
+}
+
+/**************** Form Specific ****************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  margin: 10px auto;
+  padding: 10px 10px;
+}
+
+legend {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  font-family: 'PT Serif', serif;
+}
+
+label {
+  display: block;
+  font-family: 'Noto Serif', serif;
+}
+
+fieldset {
+	border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 1rem;
+  height: auto;
+  margin: 10px 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  font-family: 'Noto Serif', serif;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+/** Placeholder **/
+
+::-webkit-input-placeholder {  /* Chrome/Opera/Safari */
+  font-style: italic;
+  font-size: .8rem;
+  text-align: right;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-style: italic;
+  font-size: .8rem;
+
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  font-style: italic;
+  font-size: .8rem;
+
+}
+
+:-moz-placeholder {  /* Firefox 18- */
+  font-style: italic;
+  font-size: .8rem;
+
+}
+
+/** ~ **/
+
+select {
+  padding: 6px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+input:focus, 
+textarea:focus {
+	border: 2px solid #273c66;
+}
+
+textarea {
+	height: 120px;
+}
+
+input[type="number"] {
+	width: 50%;
+}
+
+.zipcode {
+	display: block;
+}
+
+.contact-wrap {
+	border-bottom: 2px solid black;
+	margin-bottom: 40px;
+}
+
+.news-wrap label {
+	display: inline-block;
+}
+
+.news-wrap label:nth-of-type(1) {
+	margin: 0 0 10px 0;
+}
+
+.news-wrap label:nth-of-type(5) {
+	margin: 25px 0 5px 0;
+}
+
+.news-wrap label:nth-of-type(8) {
+	margin: 25px 0 0 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 16px 8px 0;
+  display: inline-block;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #273c66;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+  font-family: 'Noto Serif', serif;
+}
+
+p {
+	text-align: center;
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+
+  form {
+    max-width: 768px;
+    background-color: #efefef;
+    border-radius: 5px;
+  }
+
+  textarea {
+  	background-color: #fff;
+  }
+
+  .contact-wrap label {
+  	float: left;
+  	width: 30%;
+  	margin-top: 25px;
+  }
+
+  .contact-wrap input {
+  	float: right;
+  	width: 60%;
+  	transition: width 2s;
+  	background-color: #fff;
+  }
+
+  .contact-wrap input:focus {
+  	width: 70%;
+  }
+
+  .contact-wrap select {
+  	float: right;
+  	width: 60%;
+  	background-color: #fff;
+  }
+
+  .clear {
+  	clear: both;
+  }
+
+  .text-wrap:after {
+	width: 50%;
+  }
+
+}
